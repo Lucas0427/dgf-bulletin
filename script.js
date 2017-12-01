@@ -37,6 +37,12 @@ $(document).ready(function() {
 	// news source toggling
 	$(".title-link").click(function() {
 		getNews($(this).attr("id"), isLoggedIn)
+		$("#kurland-container").hide()
+	})
+
+	$(".custom-link").click(function() {
+		$(".container").html('')
+		$("#kurland-container").show()
 	})
 
 	// set global variable for logged-in state

@@ -66,6 +66,14 @@ body {
 	padding-top: 150px;
 	margin: auto;
 }
+#kurland-container {
+	margin: auto;
+}
+
+#kurland-container a {
+	display: inline-block;
+}
+
 .title {
 	text-align: center;
 	width: 100%;
@@ -81,11 +89,25 @@ body {
 	margin-top: 10px;
 	font-size: 14px;
 }
-.title-link {
+.title-link, .custom-link {
 	margin: 5px;
 	display: inline-block;
 	cursor: pointer;
 }
+
+#kurland-container {
+	display: none;
+}
+
+.custom-link {
+	font-weight: bold;
+	animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+
 .title-link:hover {
 	text-decoration: underline;
 }
